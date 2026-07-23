@@ -400,9 +400,12 @@ flutter run
 **✏️ ทดลองแก้ไข B:** เปลี่ยน `fontSize: 24` เป็น `fontSize: 48` บันทึกไฟล์และสังเกตผล
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1282" height="878" alt="image" src="https://github.com/user-attachments/assets/6239ebc3-9c6b-49d4-917c-e40eedf4a51d" />
+
+<img width="1280" height="881" alt="image" src="https://github.com/user-attachments/assets/2906fed3-ff25-4b2a-bf8c-6f148ca3305b" />
+
+
 ---
 
 ### การทดลองที่ 2 — Layout Widgets: Column, Row, Container
@@ -460,14 +463,26 @@ flutter run
 **✏️ ทดลองแก้ไข C:** เปลี่ยน `MainAxisAlignment.center` ของ Column เป็น `.start`, `.end`, `.spaceBetween`, `.spaceEvenly` ทีละอัน สังเกตการเปลี่ยนแปลง
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+`.start`
+<img width="1283" height="872" alt="Screenshot 2026-07-23 101057" src="https://github.com/user-attachments/assets/3c04e3f3-cca2-41d2-b5bf-c889a9097973" />
+
+`.end`
+<img width="1280" height="885" alt="image" src="https://github.com/user-attachments/assets/538477b4-357f-433c-b488-3df6a4dce90d" />
+
+ `.spaceBetween`
+<img width="1287" height="881" alt="image" src="https://github.com/user-attachments/assets/f65e431f-4093-4756-9797-e98a4718a0e2" />
+
+`.spaceEvenly`
+<img width="1282" height="871" alt="image" src="https://github.com/user-attachments/assets/4315e92e-6a75-4f6b-b1bc-8a6de4288c09" />
+
+
+
 **✏️ ทดลองแก้ไข D:** ใน Row เพิ่ม Container D สีม่วง ขนาด 80×80 ต่อจาก C
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1287" height="880" alt="image" src="https://github.com/user-attachments/assets/f42049ce-48fc-4ad0-9768-18c743928f52" />
+
+
 ---
 
 ### การทดลองที่ 3 — StatelessWidget แรก
