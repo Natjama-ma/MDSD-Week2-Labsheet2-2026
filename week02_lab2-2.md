@@ -595,16 +595,16 @@ class InfoCard extends StatelessWidget {
 
 **ขั้นตอนที่ 3** บันทึกและตรวจสอบผล — ควรเห็น Card 3 ใบเรียงกัน
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1278" height="882" alt="image" src="https://github.com/user-attachments/assets/28783799-56af-46e1-a57e-376e501aa66a" />
+
 
 **✏️ ทดลองแก้ไข E:** เพิ่ม `InfoCard` ที่ 4 แสดง "คณะ" ด้วยไอคอน `Icons.account_balance` สีแดง
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1283" height="877" alt="image" src="https://github.com/user-attachments/assets/11c7f20b-0ff1-4bf3-9ff5-7531cc47bb86" />
+
 ---
 
 ### การทดลองที่ 4 — StatefulWidget: Counter
@@ -744,9 +744,9 @@ class _CounterSectionState extends State<CounterSection> {
 
 **ขั้นตอนที่ 3** บันทึกและทดลองกดปุ่ม +, -, Reset และสลับ Step
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1278" height="888" alt="image" src="https://github.com/user-attachments/assets/85637ed4-90fa-4f6d-ab81-f5fc5dd3819a" />
+
 
 
 **✏️ ทดลองแก้ไข F:** ทดลองลบ `setState()` ออก เหลือแค่ `_count += _step` แล้วกดปุ่ม สังเกตว่าตัวเลขไม่เปลี่ยนบนหน้าจอแม้ตัวแปรเปลี่ยน แล้วใส่ `setState()` กลับคืน
@@ -754,9 +754,9 @@ class _CounterSectionState extends State<CounterSection> {
 > **สิ่งที่เกิดขึ้น:** เมื่อไม่มี `setState()` ค่า `_count` เปลี่ยนในหน่วยความจำจริง แต่ Flutter ไม่รู้ว่าต้อง rebuild UI ทำให้หน้าจอยังแสดงค่าเดิม
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+<img width="1282" height="876" alt="image" src="https://github.com/user-attachments/assets/76cfe396-819d-4733-8811-11610b33b448" />
+
+
 ---
 
 ### การทดลองที่ 5 — StatefulWidget: Form และ Text Input
@@ -884,9 +884,9 @@ class _GreetingFormState extends State<GreetingForm> {
 **ขั้นตอนที่ 3** บันทึกและทดสอบ — กรอกชื่อแล้วกดปุ่ม
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1296" height="880" alt="image" src="https://github.com/user-attachments/assets/c40e0a92-6fae-4922-9a29-4233ca607967" />
+
 
 **✏️ ทดลองแก้ไข G:** ทดลองกดปุ่มโดยไม่กรอกชื่อ สังเกตว่า Error Message ปรากฏ และกดปุ่ม Reset (clear field) แล้วสังเกตว่า Error หายไป
 
@@ -1001,9 +1001,10 @@ import 'dart:async';
 
 **ขั้นตอนที่ 4** บันทึกและดูผล — เวลาควรอัปเดตทุกวินาที
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1285" height="872" alt="image" src="https://github.com/user-attachments/assets/85555c8c-e96e-4f66-ba08-bb1f131c2470" />
+
+
 
 **✏️ ทดลองแก้ไข H:** ลองลบ `_timer?.cancel()` ใน `dispose()` แล้วสังเกต — ใน Debug Console อาจเห็น Warning "setState() called after dispose()" หลังจากออกจากหน้า แล้วใส่กลับคืน
 
@@ -1431,9 +1432,14 @@ class _GreetingFormState extends State<GreetingForm> {
 **ขั้นตอนที่ 3** ทดสอบทุก Tab และทุก Feature
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1282" height="876" alt="image" src="https://github.com/user-attachments/assets/e8b279cf-8c14-43aa-a0ca-9a4d7a144986" />
+
+<img width="1282" height="872" alt="image" src="https://github.com/user-attachments/assets/8af6d48a-1c75-4bb0-82d3-df1a51e6f418" />
+
+<img width="1292" height="872" alt="image" src="https://github.com/user-attachments/assets/a867e6cd-204f-4a68-9fc8-eced3d9f0b0c" />
+
+
 ---
 
 ### การทดลองที่ 8 — Hot Reload vs Hot Restart
@@ -1483,8 +1489,23 @@ colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
 **โจทย์ B (กลาง):** ใน Counter Page เพิ่ม History ที่บันทึกทุกการกระทำ (เพิ่ม/ลด/Reset) พร้อมเวลา เช่น "14:30:25 — เพิ่ม 5 (รวม: 15)" แสดงเป็น List ด้านล่าง Counter และมีปุ่ม "ล้าง History"
 
 **โจทย์ C (กลาง):** ใน Form Page เพิ่ม Dropdown เลือก "ภาษาของคำทักทาย" (ไทย / อังกฤษ / ญี่ปุ่น) และเปลี่ยนข้อความคำทักทายตามภาษาที่เลือก
+ญี่ปุ่น
+<img width="1278" height="882" alt="image" src="https://github.com/user-attachments/assets/a80b772a-5f2e-482e-ae3f-11120c825233" />
+
+อังกฤษ
+<img width="1281" height="877" alt="image" src="https://github.com/user-attachments/assets/0782336b-9780-466a-9611-021595739f28" />
+
+ไทย
+<img width="1277" height="873" alt="image" src="https://github.com/user-attachments/assets/0a3a5fc1-6fc9-45f1-b164-5d58cde36518" />
+
 
 **โจทย์ D (ยาก):** สร้าง Tab ใหม่ "Todo List" ที่มี TextField รับชื่องาน, ปุ่ม Add, รายการ Todo ที่กดติ๊กถูก/ลบได้ และแสดงจำนวนงานที่เหลือ
+
+<img width="1286" height="875" alt="image" src="https://github.com/user-attachments/assets/d9f4b825-480c-42fc-9bab-fae7a9efd9da" />
+
+<img width="1282" height="880" alt="image" src="https://github.com/user-attachments/assets/65547bdf-7d27-40f7-86e8-66e419e85ed8" />
+
+
 
 ---
 
